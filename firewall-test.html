@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cockpit Firewall Test </title>
+ 
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+</style>
+</head>
+<body>
+<button type="button" align = "center" onclick="alert('Enter port')">Add ports</button>
+<div style="vertical-align:top;">
+ <table style="float:left;">
+
+<table width="300" border="0" align="left" cellpadding="0" cellspacing="0" style="margin-right:10px;">
+ 
+  <tr>
+    <th>Port number</th>
+    <th>Description</th> 
+    <th>Protocols</th>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>Web Server #1 HTML</td>
+    <td>TCP</td>
+  </tr>
+  <tr>
+    <td>443</td>
+    <td>Secure Web Server #1 HTML</td>
+    <td>TCP</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>Web Server #2</td>
+    <td>TCP</td>
+  </tr>
+</table>
+
+<table width="100" border="0" align="left" cellpadding="0" cellspacing="0">
+ <tr>
+    <th>Time</th> 
+    <th>Source</th>
+    <th>Source Port</th>
+    <th>Destination </th>
+    <th>Destination port</th>
+  </tr>
+  <tr>
+    <td>05:10:39</td>
+    <td>172.16.254.1</td>
+    <td>80</td>
+    <td>192.168.1.101</td>
+    <td>443 </td>
+  </tr>
+  <tr>
+  
+    <td>05:10:39</td>
+    <td>192.168.1.101</td>
+    <td> 80</td>
+    <td>172.16.254.1</td>
+    <td>443 </td>
+  </tr>
+  <tr>
+ 
+    <td>15:40:39</td>
+    <td>191.258.14.16</td>
+    <td> 80</td>
+    <td>172.16.254.1</td>
+    <td>443</td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>
