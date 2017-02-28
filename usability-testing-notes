@@ -1,0 +1,74 @@
+TEST 1 Date: 17/02/2017
+
+Participant 1:
+Was able to complete the tasks
+
+-wants to access a website through port 80
+- Looks around the interface
+- Notices Firewall access rules
+- " The port 80 should be added here"
+- Goes to Networking tab to add a new port
+- Asked to see if adding a port is possible from the current page
+- "Oh yeah,there is Add new port here"
+- Clicks on it
+- Dialog box to add new port is as expected.
+- Succesfully completes task 1 and new port added to the list.
+- Successfully completes task 2 of closing port 21 by clicking on trash can.
+- Finds it difficult to understand task 3
+-Looks for ports of messaging app in access rules,can't find it.
+-Moves to traffic log to look for the port that is accessed by the messaging app.
+-Recognises the IP address of their server and the port number.
+-Adds port number to the firewall access rules.
+-Successfully completes the task.
+
+
+TEST 2 Date: 17/02/2017
+Participant 2:
+Was able to complete the tasks
+
+-wants to access a website through port 80
+- Looks around the interface
+- Notices Firewall access rules
+- " The port 80 should be added here"
+- "There is Add new port here"
+- Clicks on it
+- Dialog box to add new port is as expected.
+- Succesfully completes task 1 and new port added to the list.
+- Successfully completes task 2 of closing port 21 by clicking on trash can.
+- Finds it difficult to understand task 3
+-Looks for ports of messaging app in access rules,can't find it.
+-Moves to traffic log to look for the port that is accessed by the messaging app.
+-Locates port number of server IP of messaging app.
+-Adds port number to the firewall access rules.
+-Successfully completes the task.
+
+
+TEST 3 Date: 24/02/2017
+Was able to complete the tasks
+
+-looks at the screen and sees the current set of rules. Port 8080 is open.
+-"Test is on 8080, but that's for testing, and 80 is for production"
+-Expected to see requests in the traffic log. Clicks on filter to find port 80 in traffic log. 
+-No port 80 requests present.
+- Clicks on "Add new port" and wants to change the description in the dialog box.
+-Confused about the #1 ,#2 ,#3 in description and doesn't expect it to be present.
+- Clicks on the trashcan to remove port 21.
+- Expects for confirmation dialog before removing the port.
+- Third task is more tricky.
+-"would ask colleague to send a message on the messaging app and their IP address and note it from the traffic log"
+-unclear from traffic log about the application and the port
+-expects subnets and masks in the "Add new port" dialog
+-show common port names like ssh and http instead of numbers
+-"Would be nice to be able to choose and not needing to type a number."
+-filter to see blocked traffic log
+
+TEST 4 Date: 24/02/2017
+Was able to complete the tasks
+-Sees access rules and port 8080 but not port 80.
+-"I think I can click on Delete to delete 8080 and click on add port 80 instead"
+-expects port 80 to be added in the list
+-Clicks on red trashcan to remove port 21
+-Task 3: "I can try and look in the traffic log to find out the port and use that to create a new firewall rule"
+-looks into the traffic log but "not sure if the traffic log include things that the firewall refused"
+-It seems very clear how to do things. Except for the traffic log
+-It would be cool to see in the log what ports and traffic has been refused."I would like to see names of services there"
