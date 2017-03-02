@@ -15,8 +15,10 @@
 <div style="vertical-align:top;">
  <table style="float:left;">
 
-<table width="300" border="1" align="left" cellpadding="3" cellspacing="3" style="margin-right:10px;">
- 
+<div style="display:table width="300" border="1" align="left" cellpadding="3" cellspacing="3" style="margin-right:10px;">
+
+
+
   <tr>
     <th>Port number</th>
     <th>Description</th> 
@@ -37,7 +39,9 @@
     <td>Web Server #2</td>
     <td>TCP</td>
   </tr>
+  </div>
 </table>
+
 
 <hr>
 <div class="list-group list-view-pf list-view-pf-view">
@@ -50,7 +54,7 @@
         <input type="checkbox">
       </div>
       <div class="list-view-pf-actions">
-        <button class="btn btn-default">Action</button>
+        <button class="btn btn-default" align ="right">Action</button>
         <div class="dropdown pull-right dropdown-kebab-pf">
   <button class="btn btn-link dropdown-toggle" type="button" id="dropdownKebabRight9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     <span class="fa fa-ellipsis-v"></span>
@@ -70,42 +74,74 @@
           <span class="fa fa-plane list-view-pf-icon-sm"></span>
         </div>
         <div class="list-view-pf-body">
-          <div class="list-view-pf-description">
-            <div class="list-group-item-heading">
-              Event One
-            </div>
-            <div class="list-group-item-text">
-              The following snippet of text is <a href="#">rendered as link text</a>.
-            </div>
-          </div>
           <div class="list-view-pf-additional-info">
             <div class="list-view-pf-additional-info-item">
-              <span class="pficon pficon-screen"></span>
-              <strong>8</strong> Hosts
+              
+              <strong>192.0.34.166</strong>Source<strong>56451</strong> Source port<strong>150.135.96.147</strong> Destination <strong>25891</strong> Destination port
             </div>
-            <div class="list-view-pf-additional-info-item">
-              <span class="pficon pficon-cluster"></span>
-              <strong>6</strong> Clusters
-            </div>
-            <div class="list-view-pf-additional-info-item">
-              <span class="pficon pficon-container-node"></span>
-              <strong>10</strong> Nodes
-            </div>
-            <div class="list-view-pf-additional-info-item">
-              <span class="pficon pficon-image"></span>
-              <strong>8</strong> Images
-            </div>
-          </div>
+          
+      </div>
         </div>
       </div>
     </div>
     <div class="list-group-item-container container-fluid hidden">
       <div class="close">
-        <span class="pficon pficon-close"></span>
+       
       </div>
       <div class="row">
         <div class="col-md-3">
           <div id="utilizationDonutChart1" class="example-donut-chart-utilization"></div>
+<hr>
+<div class="list-group list-view-pf list-view-pf-view">
+  <div class="list-group-item">
+    <div class="list-group-item-header">
+      <div class="list-view-pf-expand">
+        <span class="fa fa-angle-right"></span>
+      </div>
+      <div class="list-view-pf-checkbox">
+        <input type="checkbox">
+      </div>
+      <div class="list-view-pf-actions">
+        <button class="btn btn-default" align ="right">Action</button>
+        <div class="dropdown pull-right dropdown-kebab-pf">
+  <button class="btn btn-link dropdown-toggle" type="button" id="dropdownKebabRight9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span class="fa fa-ellipsis-v"></span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownKebabRight9">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="list-view-pf-main-info">
+        <div class="list-view-pf-left">
+          <span class="fa fa-plane list-view-pf-icon-sm"></span>
+        </div>
+        <div class="list-view-pf-body">
+          <div class="list-view-pf-additional-info">
+            <div class="list-view-pf-additional-info-item">
+              
+              <strong>76.187.242.245</strong>Source<strong>56456</strong> Source port<strong>150.135.96.147</strong> Destination <strong>24891</strong> Destination port
+            </div>
+          
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="list-group-item-container container-fluid hidden">
+      <div class="close">
+       
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div id="utilizationDonutChart1" class="example-donut-chart-utilization">
+</div>
+  
+<!-- 
 <script>
   var c3ChartDefaults = $().c3ChartDefaults();
   var utilizationDonutChartConfig = c3ChartDefaults.getDefaultDonutConfig('A');
@@ -133,7 +169,9 @@
   $().pfSetDonutChartTitle("#utilizationDonutChart1", "60", "MHz Used");
 </script>
 
+
         </div>
+
         <div class="col-md-9">
           <dl class="dl-horizontal">
             <dt>Host Name</dt>
@@ -158,34 +196,9 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="list-group-item">
-    <div class="list-group-item-header">
-      <div class="list-view-pf-expand">
-        <span class="fa fa-angle-right"></span>
-      </div>
-      <div class="list-view-pf-checkbox">
-        <input type="checkbox">
-      </div>
-      <div class="list-view-pf-actions">
-        <button class="btn btn-default">Action</button>
-        <div class="dropdown pull-right dropdown-kebab-pf">
-  <button class="btn btn-link dropdown-toggle" type="button" id="dropdownKebabRight10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    <span class="fa fa-ellipsis-v"></span>
-  </button>
-  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownKebabRight10">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
 
-      </div>
-<hr>
-     
-  
+
+
 </script><table width="100" border="1" align="left" cellpadding="3" cellspacing="3">
  <tr>
     <th>Time</th> 
@@ -303,6 +316,7 @@
   </tr>
 </table>
 </div>
+//-->
 <hr>
 <div class="container-fluid">
   <div id="demo-tooltip-top"></div>
